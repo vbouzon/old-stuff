@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fichier3DS", "Fichier3DS.vcproj", "{59695487-2917-4564-BA67-01EA37D42FBC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{59695487-2917-4564-BA67-01EA37D42FBC}.Debug.ActiveCfg = Debug|Win32
+		{59695487-2917-4564-BA67-01EA37D42FBC}.Debug.Build.0 = Debug|Win32
+		{59695487-2917-4564-BA67-01EA37D42FBC}.Release.ActiveCfg = Release|Win32
+		{59695487-2917-4564-BA67-01EA37D42FBC}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,127 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SCANPORT            ICON    DISCARDABLE     "ScanPort.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINFORM DIALOG DISCARDABLE  22, 17, 242, 163
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ScanP0rt by b0l0k (Tech Data Foundation)"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "&Scan",IDC_SCAN,3,33,57,13
+    EDITTEXT        IDC_PORTBEGIN,38,17,23,12,ES_CENTER | ES_NUMBER
+    EDITTEXT        IDC_PORTEND,90,17,23,12,ES_CENTER | ES_NUMBER
+    LTEXT           "Scanne port:",IDC_LBLSCANNE,100,3,42,8
+    CONTROL         "",IDC_SCANNE,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,143,
+                    3,25,9
+    LTEXT           "Adresse IP:",IDC_LBLIP,1,2,37,9
+    LTEXT           "Port initial:",IDC_LBLPORTBEGIN,2,19,36,8
+    LTEXT           "Port fin:",IDC_LBLPORTEND,64,19,26,8
+    EDITTEXT        IDC_IP,38,1,59,12
+    LISTBOX         IDC_PORTSOPEN,0,50,242,113,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Timer (en ms):",IDC_LBLTIMER,115,19,47,9
+    EDITTEXT        IDC_TIMER,162,17,22,12,ES_CENTER | ES_NUMBER
+    CONTROL         "Progress2",IDC_PROG,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,64,34,178,11
+    CONTROL         "Alea",IDC_ALEA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    188,21,25,8
+    LTEXT           "",IDC_PORTSCANNED,213,3,29,10
+    LTEXT           "Port scanné:",IDC_LBLPORTSCANNED,172,3,42,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAINFORM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 77
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

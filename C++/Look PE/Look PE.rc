@@ -1,0 +1,116 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOOKPE              ICON                    "Look PE.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 22, 17, 323, 140
+STYLE DS_SETFONT | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "Look PE"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,0,0,
+                    323,60
+    PUSHBUTTON      "Open EXE",IDC_OPEN,246,90,72,18
+    LTEXT           "EntryPoint  (RVA):",IDC_EP,12,114,66,8
+    GROUPBOX        "Optional Header",IDC_OH,6,84,237,54
+    LTEXT           "",IDC_ENTRYPOINT,72,114,48,8,SS_SUNKEN
+    LTEXT           "ImageBase:",IDC_IB,12,102,54,8
+    LTEXT           "",IDC_IMAGEBASE,72,102,48,8,SS_SUNKEN
+    LTEXT           "Size Of Image:",IDC_SOI,12,126,66,8
+    LTEXT           "",IDC_SIZEOFIMAGE,72,126,48,8,SS_SUNKEN
+    LTEXT           "Sections Alignment:",IDC_SA,126,102,66,8
+    LTEXT           "",IDC_SECTIONSALIGNMENT,192,102,48,8,SS_SUNKEN
+    LTEXT           "File Alignment:",IDC_FA,126,114,66,8
+    LTEXT           "",IDC_FILEALIGNMENT,192,114,48,8,SS_SUNKEN
+    GROUPBOX        "File Header",IDC_FH,6,60,312,24
+    LTEXT           "Number Of Sections:",IDC_NOS,12,72,72,8
+    LTEXT           "",IDC_NUMBEROFSECTIONS,84,72,48,8,SS_SUNKEN
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "logo.bmp"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

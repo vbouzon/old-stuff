@@ -1,0 +1,107 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+POPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "MonMenu"
+    BEGIN
+        POPUP "&Fichier"
+        BEGIN
+            MENUITEM "&Nouveau",                    IDM_FILE_NEW
+            MENUITEM "&Ouvrir",                     IDM_FILE_OPEN
+            MENUITEM "&Enregistrer",                IDM_FILE_SAVE
+            MENUITEM "En&registrer sous",           IDM_FILE_SAVE_AS
+            MENUITEM SEPARATOR
+            MENUITEM "&Quitter",                    IDM_APP_EXIT
+        END
+        POPUP "&Edition"
+        BEGIN
+            MENUITEM "&Annuler",                    IDM_EDIT_UNDO
+            MENUITEM SEPARATOR
+            MENUITEM "&Couper",                     IDM_EDIT_CUT
+            MENUITEM "Co&pier",                     IDM_EDIT_COPY
+            MENUITEM "C&oller",                     IDM_EDIT_PASTE
+            MENUITEM "S&upprimer",                  IDM_EDIT_CLEAR
+        END
+        POPUP "Arrière-&plan"
+        BEGIN
+            MENUITEM "&Blanc",                      IDM_BKGND_WHITE, CHECKED
+            MENUITEM "Gris &clair",                 IDM_BKGND_LTGRAY
+            MENUITEM "&Gris",                       IDM_BKGND_GRAY
+            MENUITEM "Gris &foncé",                 IDM_BKGND_DKGRAY
+            MENUITEM "&Noir",                       IDM_BKGND_BLACK
+        END
+        POPUP "&Aide"
+        BEGIN
+            MENUITEM "&Aide",                       IDM_APP_HELP
+            MENUITEM "À &propos de PopMenu...",     IDM_APP_ABOUT
+        END
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

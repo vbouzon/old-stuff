@@ -1,0 +1,48 @@
+# Project: Render3d
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = CRenderer/CRenderer.o main.o CEventManager/CEventManager.o CForme/CTriangle.o CStateManager/CStateManager.o CStateManager/CIntroState.o CForme/CNoeud.o $(RES)
+LINKOBJ  = CRenderer/CRenderer.o main.o CEventManager/CEventManager.o CForme/CTriangle.o CStateManager/CStateManager.o CStateManager/CIntroState.o CForme/CNoeud.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lm -lopengl32 -lglu32 -lglut32 -lmingw32 -lSDLmain -lSDL  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = Render3d.exe
+CXXFLAGS = $(CXXINCS)   
+CFLAGS = $(INCS)   
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Render3d.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Render3d.exe" $(LIBS)
+
+CRenderer/CRenderer.o: CRenderer/CRenderer.cpp
+	$(CPP) -c CRenderer/CRenderer.cpp -o CRenderer/CRenderer.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+CEventManager/CEventManager.o: CEventManager/CEventManager.cpp
+	$(CPP) -c CEventManager/CEventManager.cpp -o CEventManager/CEventManager.o $(CXXFLAGS)
+
+CForme/CTriangle.o: CForme/CTriangle.cpp
+	$(CPP) -c CForme/CTriangle.cpp -o CForme/CTriangle.o $(CXXFLAGS)
+
+CStateManager/CStateManager.o: CStateManager/CStateManager.cpp
+	$(CPP) -c CStateManager/CStateManager.cpp -o CStateManager/CStateManager.o $(CXXFLAGS)
+
+CStateManager/CIntroState.o: CStateManager/CIntroState.cpp
+	$(CPP) -c CStateManager/CIntroState.cpp -o CStateManager/CIntroState.o $(CXXFLAGS)
+
+CForme/CNoeud.o: CForme/CNoeud.cpp
+	$(CPP) -c CForme/CNoeud.cpp -o CForme/CNoeud.o $(CXXFLAGS)

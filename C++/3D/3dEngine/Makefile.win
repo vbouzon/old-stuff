@@ -1,0 +1,53 @@
+# Project: opengl
+# Makefile created by Dev-C++ 4.9.9.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o src/objet.o src/write.o src/map.o src/font.o src/util_srf_gcc.o src/md2.o src/texture.o src/tga.o $(RES)
+LINKOBJ  = main.o src/objet.o src/write.o src/map.o src/font.o src/util_srf_gcc.o src/md2.o src/texture.o src/tga.o $(RES)
+LIBS =  -L"lib" -lm -lopengl32 -lglu32 -lglut32 -lmingw32 -lSDLmain -lSDL   
+INCS =  -I"include" 
+CXXINCS =  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I"include/c++/3.4.2/mingw32"  -I"include/c++/3.4.2"  -I"include" 
+BIN  = opengl.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before opengl.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "opengl.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+src/objet.o: src/objet.c
+	$(CPP) -c src/objet.c -o src/objet.o $(CXXFLAGS)
+
+src/write.o: src/write.c
+	$(CPP) -c src/write.c -o src/write.o $(CXXFLAGS)
+
+src/map.o: src/map.c
+	$(CPP) -c src/map.c -o src/map.o $(CXXFLAGS)
+
+src/font.o: src/font.c
+	$(CPP) -c src/font.c -o src/font.o $(CXXFLAGS)
+
+src/util_srf_gcc.o: src/util_srf_gcc.c
+	$(CPP) -c src/util_srf_gcc.c -o src/util_srf_gcc.o $(CXXFLAGS)
+
+src/md2.o: src/md2.cpp
+	$(CPP) -c src/md2.cpp -o src/md2.o $(CXXFLAGS)
+
+src/texture.o: src/texture.cpp
+	$(CPP) -c src/texture.cpp -o src/texture.o $(CXXFLAGS)
+
+src/tga.o: src/tga.cpp
+	$(CPP) -c src/tga.cpp -o src/tga.o $(CXXFLAGS)
